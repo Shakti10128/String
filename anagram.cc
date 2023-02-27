@@ -31,7 +31,7 @@ bool isAnagram1(string s, string t) {
         return true;
 }
 
-/*-----------------solution 2 with O(nlogn) time complexity--------------------*/
+/*-----------------solution  with O(nlogn) time complexity--------------------*/
 
 
 bool isAnagram2(string s, string t) {
@@ -51,7 +51,7 @@ bool isAnagram2(string s, string t) {
 }
 
 
-/*-----------------solution 2 with O(n) time complexity using array not map--------------------*/
+/*-----------------solution 3 with O(n) time complexity using array not map--------------------*/
 
 
 bool isAnagram3(string s, string t) {
