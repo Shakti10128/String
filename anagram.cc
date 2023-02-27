@@ -51,7 +51,7 @@ bool isAnagram2(string s, string t) {
 }
 
 
-/*-----------------solution 2 with O(n) time and O(s.size) space complexity using array not map--------------------*/
+/*-----------------solution 2 with O(n) time complexity using array not map--------------------*/
 
 
 bool isAnagram3(string s, string t) {
