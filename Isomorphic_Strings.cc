@@ -3,18 +3,16 @@ using namespace std;
 
 bool isIsomorphic(string s, string t) {
         int i = 1;
-        int l1 = s.length(),l2 = t.length();
+        int l1 = s.length();
         map<char,char> m1;
         map<char,char> m2;
 
-        if(s[0]!=t[0]){
         m1[s[0]] = t[0];
         m2[t[0]] = s[0];
-        }
         while(i < l1){
             auto s1 = m1.find(s[i]);
             auto s2 = m2.find(t[i]);
-            if(s1==m1.end()){
+            if(s1==m1.end() && s2==m2.end()){
                 m1[s[i]] = t[i];
                 m2[t[i]] = s[i];
             }
@@ -29,10 +27,15 @@ bool isIsomorphic(string s, string t) {
         return true;
 }
 int main(){
-    string s = "foo";
-    string t = "bar";
+    string s = "baba";
+    string t = "bada";
    bool ans =  isIsomorphic(s,t);
-   cout<<ans;
+   if(ans){
+    cout<<"true";
+   }
+   else{
+    cout<<"false";
+   }
 
    return 0;
 }
